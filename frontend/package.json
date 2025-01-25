@@ -4,10 +4,11 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "next start"
     },
     "dependencies": {
         "@mysten/dapp-kit": "^0.13.2",
@@ -15,8 +16,8 @@
         "@mysten/sui": "^1.0.1",
         "@mysten/sui.js": "^0.54.1",
         "@mysten/zklogin": "^0.7.3",
-        "@polymedia/suits": "^0.0.42",
-        "@polymedia/webutils": "^0.0.53",
+        "@polymedia/suitcase-core": "^0.1.0",
+        "@polymedia/suitcase-react": "^0.1.0",
         "@radix-ui/react-avatar": "^1.0.4",
         "@radix-ui/react-label": "^2.0.2",
         "@radix-ui/react-popover": "^1.0.7",
@@ -34,7 +35,7 @@
         "framer-motion": "^11.2.9",
         "jwt-decode": "^4.0.0",
         "lucide-react": "^0.379.0",
-        "next": "14.2.3",
+        "next": "^14.2.3",
         "next-themes": "^0.3.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -57,7 +58,6 @@
         "eslint-plugin-react": "^7.34.1",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.6",
-        "less": "^4.2.0",
         "postcss": "^8.4.38",
         "tailwindcss": "^3.4.3",
         "vite": "^5.2.0"
